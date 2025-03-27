@@ -81,6 +81,10 @@ section {
 */
 
 .subtitle {
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  padding: 5px;
+  text-align: right;
   /* Your solution */
 }
 
