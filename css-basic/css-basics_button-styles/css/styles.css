@@ -51,6 +51,9 @@ Make sure not to put your code into the comments, because then nothing will happ
 }
 
 .button3 {
+  font-style: initial;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: larger;
   /* Style me! You can test out changing the font, font size, ...*/
 }
 
