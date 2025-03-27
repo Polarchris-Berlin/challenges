@@ -31,6 +31,12 @@ button {
 Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  border-radius: 50px;
+  color: white;
+  background-color: midnightblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 10px;
   /* Style me! Change my border, set a border radius or try out other styles. :) */
 }
 
