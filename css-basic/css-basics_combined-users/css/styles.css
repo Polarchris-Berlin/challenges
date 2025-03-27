@@ -64,7 +64,16 @@ li {
   text-align: end;
   margin: 0;
 }
+/* Anpassung eines .user elements in einer ungeordneten Liste */
+ul .user .bio {
+  display: none;
+}
 
+/* Richtet location nach links aus und ändert die Farbe */
+ul .user .location {
+  text-align: left;
+  color: darkslategray;
+}
 /*
   Part 1
 
