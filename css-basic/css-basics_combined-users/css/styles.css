@@ -19,9 +19,9 @@ body {
 
 main,
 aside {
-  max-width: 800px;
+  max-width: 250px;
   margin: 24px auto;
-  padding: 16px 32px;
+  padding: 12px;
   border: 2px dotted lightslategray;
   border-radius: 4px;
   position: relative;
@@ -47,23 +47,33 @@ li {
 }
 
 .name {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
 }
 
 .bio {
-  font-size: 14px;
+  font-size: 12px;
   color: darkslategray;
+  margin: 6px 0;
 }
 
 .location {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   text-align: end;
   margin: 0;
 }
+/* Anpassung eines .user elements in einer ungeordneten Liste */
+ul .user .bio {
+  display: none;
+}
 
+/* Richtet location nach links aus und ändert die Farbe */
+ul .user .location {
+  text-align: left;
+  color: darkslategray;
+}
 /*
   Part 1
 
