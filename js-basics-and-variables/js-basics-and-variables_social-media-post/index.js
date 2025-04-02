@@ -10,7 +10,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const postTitle = "Reise nach Norwegen";
+const postContent =
+  "Norwegen enttäuscht nie. Jetzt ist die richtige Zeit, um das Land zu erleben.";
+let numberLikes = 55;
+const postCreator = "Polarchris";
+const isReported = false;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +23,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(postTitle);
+console.log(postContent);
+console.log(numberLikes);
+console.log(postCreator);
+console.log(isReported);
 
 // --^-- write your code here --^--
+numberLikes = numberLikes + 1;
+console.log(numberLikes);
