@@ -84,8 +84,9 @@ else {
 }
 
 // Part 5: Greeting
-const userName = "Archibald";
+const userName = "Chris";
 
-const greeting = "Hello " + "//enter your code here" + "!";
+const greeting =
+  userName === "Niklas" ? "Hello Coach!" : "Hello " + userName + "!";
 
 console.log(greeting);
