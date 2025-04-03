@@ -59,7 +59,8 @@ if (numberOfHotdogs < 5) {
       priceTotal +
       " €"
   );
-} else if (numberOfHotdogs >= 1000000) {
+} else numberOfHotdogs >= 1000000;
+{
   let priceSingle = 0.1;
   let priceTotal = priceSingle * numberOfHotdogs;
 
@@ -73,11 +74,14 @@ if (numberOfHotdogs < 5) {
   );
 }
 // Part 4: Daytime
-const currentHour = 12;
-
+const currentHour = 17;
 const statement = "";
 
-console.log(statement);
+if (currentHour < 17)
+  console.log("Still need to learn"), console.log(statement);
+else {
+  console.log("Partytime!!!");
+}
 
 // Part 5: Greeting
 const userName = "Archibald";
