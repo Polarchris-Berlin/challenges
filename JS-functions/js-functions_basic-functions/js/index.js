@@ -9,6 +9,12 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const book = {
+  title: "Berlin - A city turns into a slum",
+  author: "crazy bitch 2",
+  rating: 4.5,
+  sold: 500,
+};
 
 // --^-- write your code here --^--
 
@@ -27,7 +33,18 @@ Then:
 */
 
 // --v-- write your code here --v--
+console.log(book.title);
+console.log(book.author);
+console.log(book.rating);
+console.log(book.sold);
 
+book["sold"] = 550;
+book["rating"] = 3.5;
+
+console.log(book.title);
+console.log(book.author);
+console.log(book.rating);
+console.log(book.sold);
 // --^-- write your code here --^--
 
 /*
@@ -40,5 +57,19 @@ Then:
 */
 
 // --v-- write your code here --v--
+function logBookData(book) {
+  console.log(book.title);
+  console.log(book.author);
+  console.log(book.rating);
+  console.log(book.sold);
+}
+logBookData(book);
 
+book.sold = 600;
+
+logBookData(book);
+
+book.sold = 700;
+
+logBookData(book);
 // --^-- write your code here --^--
