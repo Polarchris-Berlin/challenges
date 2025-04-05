@@ -23,7 +23,17 @@ Update the content and style of the page based on the current day and time.
 const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
-  // Code here
+  const currentHour = new Date().getHours();
+
+  if (currentHour >= 6 && currentHour <= 12) {
+    return "Good morning";
+  } else if (currentHour >= 13 && currentHour <= 18) {
+    return "Good afternoon";
+  } else if (currentHour >= 19 && currentHour <= 22) {
+    return "Good evening";
+  } else {
+    return "Good Night";
+  }
 }
 
 function getDayColor() {
