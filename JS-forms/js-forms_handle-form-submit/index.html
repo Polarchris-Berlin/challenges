@@ -32,6 +32,7 @@
             name="firstName"
             id="first-name"
             placeholder="Your first name"
+            autocomplete="given-name"
           />
 
           <label for="last-name">Last Name</label>
@@ -40,13 +41,15 @@
             name="lastName"
             id="last-name"
             placeholder="Your last name"
+            autocomplete="family-name"
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" min="16" max="200" />
+          <input type="number" name="age" id="age" min="16" max="200"
+          autocomplete="email/>
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" autocomplete="email" />
         </fieldset>
 
         <fieldset>
