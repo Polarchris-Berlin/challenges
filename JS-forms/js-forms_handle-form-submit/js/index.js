@@ -57,6 +57,9 @@ const validateInputs = () => {
     TOS,
   });
 
+  const AgeBadnessSum = Age + BadnessRating;
+  console.log("The age-badness-sum of " + FirstName + " is " + AgeBadnessSum);
+
   form.reset();
   setTimeout(() => {
     FirstNameInput.focus();
