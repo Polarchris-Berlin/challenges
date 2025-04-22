@@ -1,3 +1,7 @@
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Smiley isHappy={false} />;
+}
+
+function Smiley({ isHappy }) {
+  return <p>{isHappy ? "🙂" : "☹️"}</p>;
 }
