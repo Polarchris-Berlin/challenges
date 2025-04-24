@@ -6,5 +6,5 @@
 }
 
 .tag--highlight {
-  color: var(--color-nemo);
+  background-color: var(--color-nemo);
 }
