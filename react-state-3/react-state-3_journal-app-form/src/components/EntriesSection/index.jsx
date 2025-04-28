@@ -1,12 +1,13 @@
+import { Fragment } from "react";
+import { useState } from "react";
 import "./EntriesSection.css";
 import Divider from "../Divider";
 import Entry from "../Entry";
 import Tabs from "../Tabs";
 import Tab from "../Tab";
 import Badge from "../Badge";
-import { Fragment } from "react";
 
-const entries = [
+const initialEntries = [
   {
     id: 1000,
     date: "Feb 5, 2025",
@@ -37,11 +38,12 @@ const entries = [
 ];
 
 export default function EntriesSection() {
+  const [entries, setEntries] = useState(initialEntries);
   return (
     <section className="entries-section">
       <Tabs>
         <Tab active>
-          All Entries <Badge isActive>3</Badge>
+          All Entries <Badge isActive>{entries.length}</Badge>
         </Tab>
         <Tab>
           Favorites <Badge>1</Badge>
