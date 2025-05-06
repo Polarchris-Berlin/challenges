@@ -4,7 +4,7 @@ This exercise lets you perform Test Driven Development: writing the test first a
 
 ## Tasks
 
-Have a look at the following files:
+Have a look at the following files:npm uun
 
 - the [index.js](index.js) exports a couple of functions, but the implementation is missing (except the first one).
 - the [index.test.js](index.test.js) imports these functions; there is a `people` array you can use for testing your functions. Finally, the test cases are predefined, but not yet implemented (except the first one).
