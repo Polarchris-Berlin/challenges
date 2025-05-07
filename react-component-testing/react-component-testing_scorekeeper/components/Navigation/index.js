@@ -40,7 +40,7 @@ export default function Navigation({ players }) {
       </StyledLink>
       <StyledLink
         href="/history"
-        path={router.pathname === "/history" ? "active" : ""}
+        $path={router.pathname === "/history" ? "active" : ""}
       >
         History
       </StyledLink>
