@@ -1,3 +1,6 @@
-// import { server } from "./server.js";
+import { server } from "./server.js";
 
-// server.listen(…
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Server läuft und hört auf ${PORT}`);
+});
