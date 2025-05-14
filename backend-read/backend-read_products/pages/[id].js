@@ -24,6 +24,19 @@ export default function Product() {
       <p>
         Price: {data.price} {data.currency}
       </p>
+      {data.reviews && data.reviews.length > 0 && (
+        <ReviewsSection>
+          <h3>Customer Reviews</h3>
+          <ul>
+            {data.reviews.map((rev) => (
+              <li key={rev._id}>
+                <strong>{rev.title}</strong> ({rev.rating}/5)
+                <p>{rev.text}</p>
+              </li>
+            ))}
+          </ul>
+        </ReviewsSection>
+      )}
       <StyledLink href="/">Back to all</StyledLink>
     </ProductCard>
   );
@@ -32,4 +45,10 @@ export default function Product() {
 export const ProductCard = styled.article`
   padding: 0.5rem 1rem;
   box-shadow: 0px 1px 5px -2px var(--color-granite);
+`;
+
+const ReviewsSection = styled.section`
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-granite);
 `;
