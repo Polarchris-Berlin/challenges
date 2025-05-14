@@ -1,12 +1,29 @@
 import styled from "styled-components";
 import StyledButton from "@/components/Button";
+import useSWR from "swr";
 
 export default function ProductForm() {
+  const { mutate } = useSWR("/api/products");
+
   async function handleSubmit(event) {
     event.preventDefault();
 
+    //Daten in ein reines Objekt umwandeln
     const formData = new FormData(event.target);
     const productData = Object.fromEntries(formData);
+
+    const res = await fetch("/api/products", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(productData),
+    });
+
+    if (res.ok) {
+      await mutate();
+      event.target.reset();
+    } else {
+      console.error("Fehler beim Anlegen des Produkts", await res.text());
+    }
   }
 
   return (
